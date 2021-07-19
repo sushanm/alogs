@@ -1,5 +1,9 @@
 <table>
-  <tr *ngFor="let item of matrixArray">
-
+  <tr *ngFor="let items of matrixArray; let i = index">
+    <td *ngFor="let item of items;, let j = index"
+    [ngClass]="{'open-position': item == '1', 'closed-position' : item == '0' }">
+      <a (click)="clickedPoistion(i,j)" >  {{item}} </a>
+    </td>
   </tr>
 </table>
+

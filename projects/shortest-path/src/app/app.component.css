@@ -1,0 +1,23 @@
+table{
+  width: 50%;
+}
+
+
+a{
+  cursor: pointer;
+}
+td{
+  width: 10%;
+  border: 1px solid;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+.open-position{
+  background-color: rgb(255, 255, 255);
+}
+
+.closed-position{
+  background-color: rgb(247, 142, 142);
+}

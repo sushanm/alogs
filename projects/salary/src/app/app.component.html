@@ -1,0 +1,15 @@
+
+<app-global-navigation></app-global-navigation>
+
+<div class="container">
+
+  <button mat-raised-button [routerLink]="['', {outlets: { salary: ['home'] }} ]">Salary Home</button>
+
+  <button mat-raised-button [routerLink]="['', {outlets: { salary: ['managesalary'] }} ]">Manage Salary</button>
+
+  <button mat-raised-button [routerLink]="['', {outlets: { salary: ['monthlysalary'] }} ]">Monthly Salary</button>
+
+
+
+<router-outlet name="salary"></router-outlet>
+</div>
